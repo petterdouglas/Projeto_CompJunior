@@ -1,0 +1,170 @@
+.request_section {
+    padding-top: 120px;
+    margin-bottom: 180px;
+    display: flex;
+    height: 800px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.request_section>h1 {
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: #1C6289;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.request_section>h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #759fcf;
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.request_section fieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 55%;
+    margin-top: 40px;
+    padding: 30px;
+    border: 3px solid #1C6289;
+    border-radius: 10px;
+}
+
+.request_section fieldset form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.request_section fieldset form h1 {
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #242731;
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.request_section fieldset form h2 {
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    color: #575F6E;
+    margin-bottom: 40px;
+}
+
+.request_section fieldset form div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    border-bottom: 2.2px solid;
+    margin-bottom: 25px;
+}
+
+.request_section fieldset form div img {
+    width: 20px;
+    height: 20px;
+}
+
+.request_section fieldset form div .request_section_form_text {
+    width: 100%;
+    border: none;
+    padding: 16px;
+    background-color: #f2f2f8;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #1C6289;
+}
+
+.request_section fieldset form div .request_section_form_text::-moz-placeholder {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #8BA8E3;
+    font-size: 14px;
+}
+
+.request_section fieldset form div .request_section_form_text::placeholder {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #8BA8E3;
+    font-size: 14px;
+}
+
+.request_section fieldset form div .request_section_form_text:focus {
+    outline: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+}
+
+.request_section fieldset form .request_section_add {
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+    border: none;
+    text-align: center;
+}
+
+.request_section fieldset form .request_section_add button {
+    border: none;
+    cursor: pointer;
+    background-color: inherit;
+}
+
+.request_section fieldset form .request_section_add p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+}
+
+.request_section fieldset form .request_section_comments {
+    align-items: start;
+}
+
+.request_section fieldset form .request_section_comments .request_section_form_text {
+    padding-top: 2px;
+    padding-bottom: 80px;
+    resize: none;
+}
+
+.request_section fieldset #request_section_btn {
+    margin-top: 30px;
+    justify-content: end;
+    align-self: center;
+    width: 50%;
+    height: 50px;
+    border-radius: 12px;
+    border: 2.23px solid #1C6289;
+    background-color: inherit;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 24px;
+    color: #1C6289;
+    cursor: pointer;
+}
+
+.request_section fieldset #request_section_btn:hover {
+    background: #4771af;
+    color: #ffffff;
+}

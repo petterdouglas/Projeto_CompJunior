@@ -1,0 +1,207 @@
+.home-section {
+    padding-top: 180px;
+    margin-bottom: 6em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 460px;
+}
+
+.home-section_contents {
+    width: 40%;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.home-section_contents h1 {
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 32px;
+    width: 80%;
+    color: #1C6289;
+}
+
+.home-section_contents p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #759fcf;
+}
+
+.home-section_contents .home-section_btn {
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    padding: 20px;
+    color: white;
+    width: 180px;
+    background-color: #1C6289;
+    border-radius: 50px;
+    border: 1px solid;
+    cursor: pointer;
+}
+
+.home-section_contents .home-section_btn:hover {
+    color: #1C6289;
+    background-color: inherit;
+}
+
+.home-section_img-container #home-section_img {
+    width: 435px;
+    height: 370px;
+}
+
+.description-section {
+    display: flex;
+    width: 100%;
+    height: 560px;
+    margin-bottom: 50px;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+.description-section img {
+    width: 433px;
+    height: 433px;
+}
+
+.description-section_content {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.description-section_content h1 {
+    width: 50%;
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 36px;
+    color: #1C6289;
+    line-height: 56px;
+}
+
+.description-section_content #description-h1_line {
+    width: 60px;
+    height: 5px;
+    margin-bottom: 10px;
+}
+
+.description-section_content p {
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 30px;
+    margin-bottom: 38px;
+}
+
+.values-section {
+    width: 100%;
+    height: 560px;
+    display: flex;
+    padding-top: 60px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    background-image: url("../assets/value-bg_img.png");
+    background-repeat: no-repeat;
+    background-size: 650px;
+    background-position: right -236px;
+}
+
+.values-section_content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 30%;
+    margin-left: 30px;
+}
+
+.values-section_content h1 {
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 36px;
+    color: #1C6289;
+    line-height: 48px;
+}
+
+.values-section_content #values-h1_line {
+    width: 60px;
+    height: 5px;
+    margin-bottom: 10px;
+}
+
+.values-section_content p {
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: #759fcf;
+    margin-bottom: 20px;
+}
+
+.values-section img {
+    width: 550px;
+    height: 350px;
+}
+
+.mission-section {
+    display: flex;
+    width: 100%;
+    height: 560px;
+    padding-top: 120px;
+    margin-bottom: 120px;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+.mission-section img {
+    width: 433px;
+    height: 433px;
+}
+
+.mission-section_content {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.mission-section_content h1 {
+    margin-top: 40px;
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 36px;
+    color: #1C6289;
+    line-height: 56px;
+}
+
+.mission-section_content #mission-h1_line {
+    width: 60px;
+    height: 5px;
+    margin-bottom: 10px;
+}
+
+.mission-section_content p {
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 30px;
+    color: #759fcf;
+}
