@@ -5,7 +5,12 @@ import Tablet from '../assets/icon-tablet.png'
 import Tablet2 from '../assets/icon-tablet2.png'
 import H1Line from '../assets/h1-line.svg'
 
-const CardServices = () => {
+const CardServices = ({ alterna }) => {
+
+    function alternaSobre() {
+        alterna('Sobre')
+    }
+
     return (
         <>
             <section id='services' className={style.services_section}>
@@ -45,7 +50,7 @@ const CardServices = () => {
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa atque, provident ipsum sunt quia doloremque?</p>
                     </div>
                 </div>
-                <button className="saber-mais" href="#">Saber mais</button>
+                <button className="saber-mais" onClick={alternaSobre}>Saber mais</button>
             </section>
         </>
     )

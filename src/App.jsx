@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       {myPages === 'Inicio' && <LandingPage alterna={alternaPages}/>}
-      {myPages === 'Sobre' && <Sobre/>}
+      {myPages === 'Sobre' && <Sobre alterna={alternaPages}/>}
     </>
   )
 }

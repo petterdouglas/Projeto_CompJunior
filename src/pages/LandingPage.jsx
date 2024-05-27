@@ -10,7 +10,11 @@ import CasesSucesso from '../components/CasesSucesso'
 import Formulario from '../components/Formulario'
 import Footer from '../components/Footer'
 
-const LandingPage = () => {
+const LandingPage = ({alterna}) => {
+
+    function alternaSobre (){
+        alterna('Sobre')
+    }
     return (
         <>
             <header>
@@ -30,7 +34,7 @@ const LandingPage = () => {
                         <img id="home-section_img" src={Home} alt="Garota estudante usando um notebook" />
                     </div>
                 </section>
-                <CardServices />
+                <CardServices alterna={alterna}/>
                 <section className="description-section">
                     <img src={DescriptionImg} alt="Homem codando com imagem de um prototipo html ao fundo" />
                     <div className="description-section_content">
@@ -39,7 +43,7 @@ const LandingPage = () => {
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus quos corrupti quo id deleniti
                             maxime esse cupiditate rerum nemo. Sit culpa nam at quod ipsam voluptates praesentium sunt natus
                             provident!</p>
-                        <button className="saber-mais" href="#">Saber mais</button>
+                        <button className="saber-mais" onClick={alternaSobre}>Saber mais</button>
                     </div>
                 </section>
                 <section id='values' className="values-section">
@@ -50,7 +54,7 @@ const LandingPage = () => {
                             soluta
                             officia eveniet velit recusandae quia at maiores, atque fugit!
                         </p>
-                        <button className="saber-mais" href="#">Saber mais</button>
+                        <button className="saber-mais" onClick={alternaSobre}>Saber mais</button>
                     </div>
                     <img src={NossosValores} alt="Equipe dando as mãos" />
                 </section>
@@ -61,7 +65,7 @@ const LandingPage = () => {
                         <img id="mission-h1_line" src={H1Line} alt="" />
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quod ipsam delectus dolore officiis
                             cupiditate eligendi rem quia repudiandae suscipit?</p>
-                        <button className="saber-mais" href="#">Saber mais</button>
+                        <button className="saber-mais" onClick={alternaSobre}>Saber mais</button>
                     </div>
                 </section>
                 <CasesSucesso />
