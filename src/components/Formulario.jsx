@@ -9,6 +9,7 @@ const Formulario = () => {
     const [email, setEmail] = useState('')
     const [phone, setPhone] = useState([''])
     const [description, setDescription] = useState('')
+    const [nMax, setNMax] = useState(0)
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -21,6 +22,7 @@ const Formulario = () => {
     const insertContent = (e) => {
         e.preventDefault()
         setPhone([...phone, ''])
+        setNMax(nMax + 1)
     }
 
     const handlePhoneChange = (index, value) => {
@@ -35,7 +37,7 @@ const Formulario = () => {
                 <h1>Precisando de algo em específico?</h1>
                 <h2>Vamos discutir seu próximo projeto</h2>
                 <fieldset>
-                    <form onSubmit={handleSubmit}>
+                    <form onSubmit={handleSubmit} >
                         <h1>Entrar em Contato</h1>
                         <h2>Vamos discutir seu próximo projeto!</h2>
                         <div className={style.request_section_email}>
@@ -63,7 +65,7 @@ const Formulario = () => {
                             </div>
                         ))}
                         <div className={style.request_section_add}>
-                            <button onClick={insertContent}><img src={Plus} alt="plus" /></button>
+                            <button onClick={nMax < 1 ? insertContent : null}><img src={Plus} alt="plus" /></button>
                             <p>Adicionar outra forma de contato</p>
                         </div>
                         <div className={style.request_section_comments}>

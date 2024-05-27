@@ -1,8 +1,8 @@
 .request_section {
     padding-top: 120px;
-    margin-bottom: 180px;
+    margin-bottom: 100px;
     display: flex;
-    height: 800px;
+    height: fit-content;
     flex-direction: column;
     align-items: center;
 }
