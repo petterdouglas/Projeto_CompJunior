@@ -1,8 +1,8 @@
 import React from 'react'
-import FotoSobre from '../assets/foto_sobre.png'
 import './Sobre.css'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import Banner from '../components/Banner'
 
 const Sobre = () => {
   return (
@@ -11,6 +11,7 @@ const Sobre = () => {
         <Navbar />
       </header>
       <main>
+        <Banner/>
       </main>
       <footer>
         <Footer />
