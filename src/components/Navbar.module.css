@@ -22,6 +22,7 @@
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
+  color: #1C6289;
 }
 
 .navbar .navbar_title h1 span {
@@ -29,7 +30,6 @@
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
-  color: #1C6289;
 }
 
 .navbar .navbar_links {

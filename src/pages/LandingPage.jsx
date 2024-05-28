@@ -9,6 +9,7 @@ import './LandingPage.css'
 import CasesSucesso from '../components/CasesSucesso'
 import Formulario from '../components/Formulario'
 import Footer from '../components/Footer'
+import Sobre from './Sobre'
 
 const LandingPage = ({alterna}) => {
 
