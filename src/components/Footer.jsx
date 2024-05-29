@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import style from './Footer.module.css'
 
 const Footer = () => {
@@ -35,23 +36,23 @@ const Footer = () => {
         <div className={style.footer_info_solutions}>
           <h1>Soluções</h1>
           <div>
-            <p>Site web (Dinâmico/Estático)</p>
-            <a href="#">Saber mais</a>
+            <p>O que faz uma empresa junior</p>
+            <Link to="/about/description/#inicio">Saber mais</Link>
           </div>
           <div>
-            <p>Site web (Dinâmico/Estático)</p>
-            <a href="#">Saber mais</a>
+            <p>Quais são nossas missões?</p>
+            <Link to="/about/missions_and_values/#inicio">Saber mais</Link>
           </div>
           <div>
-            <p>Site web (Dinâmico/Estático)</p>
-            <a href="#">Saber mais</a>
+            <p>Quais são nossos valores?</p>
+            <Link to="/about/missions_and_values/#inicio">Saber mais</Link>
           </div>
         </div>
         <div className={style.footer_info_request}>
           <h1>Orçamento</h1>
           <div>
-            <p>Site web (Dinâmico/Estático)</p>
-            <a href="#">Saber mais</a>
+            <p>Nossos serviços</p>
+            <Link to="/about/services/#inicio">Saber mais</Link>
           </div>
           <div className={style.footer_info_request_cases}>
             <h2>Cases de sucesso</h2>

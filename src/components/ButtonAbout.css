@@ -1,0 +1,22 @@
+.saber_mais {
+    text-align: center;
+    width: 180px;
+    text-decoration: none;
+    color: #1C6289;
+    background-color: #f2f2f8;
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px;
+    padding: 18px;
+    border: 1px solid;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.saber_mais:hover {
+    background: #1C6289;
+    color: #ffffff;
+    border-color: #1C6289;
+}

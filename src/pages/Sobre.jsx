@@ -1,21 +1,17 @@
 import React from 'react'
-import './Sobre.css'
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
-import Banner from '../components/Banner'
+//components
+import BannerMissionsValues from '../components/BannerMissionsValues'
+import BannerServices from '../components/BannerServices'
+import BannerDescription from '../components/BannerDescription'
 
-const Sobre = () => {
+import './Sobre.css'
+
+const Sobre = ({missionsValues, description, services}) => {
   return (
     <>
-      <header>
-        <Navbar />
-      </header>
-      <main>
-        <Banner/>
-      </main>
-      <footer>
-        <Footer />
-      </footer>
+      {services === 'services' && <BannerServices />}
+      {missionsValues === 'missions_and_values' && <BannerMissionsValues />}
+      {description === 'description' && <BannerDescription />}
     </>
   )
 }

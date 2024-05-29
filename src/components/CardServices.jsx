@@ -1,15 +1,16 @@
 import React from 'react'
+
+//estilos
 import style from './CardServices.module.css'
+
+//imagens
 import Lupa from '../assets/icon-lupa.png'
 import Tablet from '../assets/icon-tablet.png'
 import Tablet2 from '../assets/icon-tablet2.png'
 import H1Line from '../assets/h1-line.svg'
+import About from './ButtonAbout'
 
-const CardServices = ({ alterna }) => {
-
-    function alternaSobre() {
-        alterna('Sobre')
-    }
+const CardServices = () => {
 
     return (
         <>
@@ -50,7 +51,7 @@ const CardServices = ({ alterna }) => {
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa atque, provident ipsum sunt quia doloremque?</p>
                     </div>
                 </div>
-                <button className="saber-mais" onClick={alternaSobre}>Saber mais</button>
+                <About bannerHash={'services'} />
             </section>
         </>
     )

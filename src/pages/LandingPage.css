@@ -1,5 +1,5 @@
 .home-section {
-    padding-top: 180px;
+    padding-top: 30px;
     margin-bottom: 6em;
     display: flex;
     flex-direction: row;
@@ -39,6 +39,8 @@
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
+    text-decoration: none;
+    text-align: center;
     padding: 20px;
     color: #f2f2f8;
     width: 200px;

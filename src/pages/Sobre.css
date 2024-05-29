@@ -1,8 +1,92 @@
-main{
+main {
+    width: 100%;
     height: fit-content;
     padding-top: 80px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.sobre_container {
+    margin-top: 60px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: 780px;
+}
+
+.sobre_container_title {
+    font-family: 'Mulish', sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    color: #345392;
+    margin-top: 30px;
+}
+
+.sobre_container_caption {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    color: #888888;
+    line-height: 20px;
+    margin: 20px 0 36px;
+}
+
+.sobre_container p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #000000;
+    line-height: 22px;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.doubts_container {
+    width: 500px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 60px;
+}
+
+.doubts_container_title {
+    font-family: 'Mulish', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    color: #1C6289;
+    padding-bottom: 12px;
+}
+
+.doubts_container_caption {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #458FF6;
+    padding-bottom: 30px;
+}
+
+.doubts_container a {
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px;
+
+    color: #1C6289;
+    width: 200px;
+    background-color: #fafaf8;
+    border-radius: 50px;
+    border: 1px solid;
+    cursor: pointer;
+}
+
+.doubts_container a:hover {
+    color: #f2f2f8;
+    background-color: #1C6289;
 }
