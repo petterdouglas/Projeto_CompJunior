@@ -61,7 +61,7 @@ const Navbar = () => {
                 <h1><span>Comp</span>Junior</h1>
             </div>
             <ul className={style.navbar_links}>
-                <li><NavLink to='/#home' onClick={() => handleNavClick('/#home')}>Home</NavLink></li>
+                <li><NavLink to='/' onClick={() => handleNavClick('/#home')}>Home</NavLink></li>
                 <li><NavLink to="/#services" onClick={() => handleNavClick('/#services')}>Serviços</NavLink></li>
                 <li><NavLink to="/#values" onClick={() => handleNavClick('/#values')}>Valores</NavLink></li>
                 <li><NavLink to="/#missions" onClick={() => handleNavClick('/#missions')}>Missão</NavLink></li>

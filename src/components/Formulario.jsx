@@ -1,10 +1,15 @@
-import style from './Formulario.module.css'
-import Email from '../assets/icon-email.png'
-import Telefone from '../assets/icon-tel.png'
-import Plus from '../assets/icon-plus.png'
+//hooks
 import { useState } from 'react'
 import { useForm } from "react-hook-form"
 import validator from 'validator'
+import { initializeApp } from "firebase/app"
+//estilos
+import style from './Formulario.module.css'
+// imagens
+import Email from '../assets/icon-email.png'
+import Telefone from '../assets/icon-tel.png'
+import Plus from '../assets/icon-plus.png'
+
 
 const Formulario = () => {
 
@@ -13,7 +18,7 @@ const Formulario = () => {
     const { register, handleSubmit, watch, formState: { errors }, reset } = useForm()
 
     const onSubmit = (data) => {
-        console.log(data)
+        window.alert('Formulário enviado com successo!')
         reset()
     }
 
@@ -22,7 +27,6 @@ const Formulario = () => {
         setNMax(nMax + 1)
         setVerdade(true)
     }
-    console.log({ errors })
 
     return (
         <>
@@ -39,7 +43,7 @@ const Formulario = () => {
                                 className={style.request_section_form_text}
                                 type="email"
                                 placeholder="Seu melhor email"
-                                {...register('Email', { required: true, validate: (value) => validator.isEmail(value)})}
+                                {...register('Email', { required: true, validate: (value) => validator.isEmail(value) })}
                             />
                         </div>
                         {errors?.Email?.type === 'required' && <span className={style.error_message}>Este campo é obrigatório!</span>}
