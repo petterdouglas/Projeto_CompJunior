@@ -41,6 +41,7 @@ const Navbar = () => {
 
     useEffect(() => {
         const handleNavigation = () => {
+            navigate('/')
             navigate(hash)
         }
         handleNavigation()

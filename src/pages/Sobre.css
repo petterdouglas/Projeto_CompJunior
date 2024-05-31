@@ -1,7 +1,6 @@
 main {
     width: 100%;
     height: fit-content;
-    padding-top: 80px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -9,7 +8,7 @@ main {
 }
 
 .sobre_container {
-    margin-top: 60px;
+    margin-top: 100px;
     margin-bottom: 40px;
     display: flex;
     flex-direction: column;
@@ -24,6 +23,7 @@ main {
     font-size: 30px;
     color: #345392;
     margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .sobre_container_caption {
@@ -31,14 +31,34 @@ main {
     font-size: 16px;
     color: #888888;
     line-height: 20px;
-    margin: 20px 0 36px;
+    margin-bottom: 36px;
+}
+
+.sobre_container_caption_add {
+    font-family: 'Mulish', sans-serif;
+    font-weight: 900;
+    font-size: 24px;
+    color: #183849;
+    margin-bottom: 20px;
 }
 
 .sobre_container p {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     color: #000000;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.sobre_container_finalParagraph{
+    margin-top: 30px;
+}
+
+.sobre_container div{
+    margin: 10px 0 20px;
+}
+
+.sobre_container img{
+    border-radius: 10px;
 }
 
 .doubts_container {
@@ -93,6 +113,7 @@ main {
 @media(max-width: 880px) {
 
     .sobre_container {
+        margin-top: 80px;
         width: 80%;
     }
 
@@ -136,6 +157,7 @@ main {
 @media(max-width: 480px) {
 
     .sobre_container {
+        margin-top: 60px;
         width: 80%;
     }
 

@@ -17,39 +17,39 @@ const CardServices = () => {
             <section id='services' className={style.services_section}>
                 <h1>Nossos serviços</h1>
                 <img id={style.services_h1_line} src={H1Line} alt="" />
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, vitae. Omnis in enim officiis dolor fugit
-                    eaque minus, labore voluptas!</p>
+                <p>Logo abaixo estão alguns de nossos principais serviços</p>
                 <div className={style.services_section_types}>
                     <div>
                         <img src={Lupa} alt="lupa" />
-                        <h2>Web site</h2>
-                        <p>Desenvolvimento de páginas web estáticas ou dinâmicas, com layout que responde a diferentes tamanhos de telas. Pensamos em cada etapa de forma a criar a melhor solução para a sua ideia.</p>
+                        <h2>Web site estático</h2>
+                        <p>Destaque-se online com um website estático com design elegante e funcionalidade intuitiva. Nossa equipe especializada cria sites que refletem a identidade da sua marca, oferecendo uma experiência de usuário excepcional. Desde páginas informativas até portfólios online, estamos aqui para transformar sua visão em realidade digital.
+                        </p>
                     </div>
                     <div>
                         <img src={Tablet} alt="document" />
                         <h2>Sistema dinâmico</h2>
-                        <p>Os sistemas web com foco em gerenciamento, lógica de negócio e desenvolvimento aprimorado são pensados para que os resultados de sua implementação sejam efetivos e cumpram todas as demandas do seu negócio.</p>
+                        <p>Aumente o engajamento com um site dinâmico personalizado. Nossa equipe utiliza as mais recentes tecnologias para criar experiências online dinâmicas e envolventes. De blogs interativos a lojas virtuais avançadas, estamos aqui para impulsionar a sua presença digital.</p>
                     </div>
                     <div>
                         <img src={Tablet} alt="tablet" />
                         <h2>Mobile</h2>
-                        <p>Desenvolvimento de aplicações mobiles, muito utilizadas nos dias de hoje. Oferecemos cuidados técnicos que possibilitam uma experiência agradável durante a navegação ao usuário, tudo isso é feito com base em um estudo com foco nas necessidades do seu cliente e negócio.
+                        <p>Desenvolvemos aplicações mobiles e cuidados técnicos que possibilitam uma experiência agradável durante a navegação ao usuário, tudo isso com base no foco nas necessidades do seu cliente e negócio.
                         </p>
                     </div>
                     <div>
                         <img src={Tablet2} alt="tablet2" />
                         <h2>Análise de dados</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa atque, provident ipsum sunt quia doloremque?</p>
+                        <p>Obtenha insights valiosos sobre seu negócio com nossa análise de dados personalizada. Identificamos padrões, tendências e oportunidades ocultas em seus dados para ajudá-lo a tomar decisões informadas e impulsionar o crescimento do seu negócio.</p>
                     </div>
                     <div>
                         <img src={Tablet} alt="tablet" />
                         <h2>Data science</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa atque, provident ipsum sunt quia doloremque?</p>
+                        <p>Potencialize o poder dos seus dados com nossa consultoria em ciência de dados. Nossa equipe especializada utiliza técnicas avançadas de análise e modelagem para extrair informações relevantes e criar soluções personalizadas para o seu negócio.</p>
                     </div>
                     <div>
                         <img src={Tablet2} alt="tablet2" />
                         <h2>Marketing</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa atque, provident ipsum sunt quia doloremque?</p>
+                        <p>Maximize o alcance e o impacto da sua marca com nossa consultoria em marketing digital. Utilizando estratégias personalizadas e análise de dados, ajudamos você a identificar oportunidades, otimizar campanhas e aumentar o engajamento do seu público-alvo</p>
                     </div>
                 </div>
                 <About bannerHash={'services'} />

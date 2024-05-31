@@ -1,5 +1,5 @@
 .home-section {
-    padding-top: 30px;
+    padding-top: 120px;
     margin-bottom: 6em;
     display: flex;
     flex-direction: row;
@@ -7,7 +7,7 @@
     justify-content: space-around;
     gap: 30px;
     width: 100%;
-    height: 460px;
+    height: fit-content;
 }
 
 .home-section_contents {
@@ -32,6 +32,7 @@
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-style: normal;
+    font-size: 14px;
     color: #759fcf;
 }
 
@@ -112,6 +113,7 @@
     font-weight: 300;
     font-style: normal;
     margin-bottom: 38px;
+    color: #4972a1;
 }
 
 .values-section {
@@ -156,7 +158,7 @@
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
-    color: #759fcf;
+    color: #4972a1;
     margin-bottom: 20px;
 }
 
@@ -209,18 +211,25 @@
     font-weight: 300;
     font-style: normal;
     margin-bottom: 10px;
-    color: #759fcf;
+    color: #4972a1;
+}
+
+@media(max-width: 1070px) {
+
+    .home-section_contents h1 {
+        font-size: 26px;
+    }
 }
 
 @media(max-width: 880px) {
-    
+
     .home-section_contents h1 {
         font-size: 24px;
         width: 100%;
     }
 
     .home-section_contents p {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .description-section h1 {
@@ -261,20 +270,8 @@
     }
 }
 
-@media(max-width: 564px) {
+@media(max-width: 700px) {
 
-    #home-section_img {
-        margin: 10px;
-        width: 38%;
-    }
-    
-    .home-section_contents h1 {
-        font-size: 20px;
-        width: 100%;
-    }
-}
-
-@media (max-width: 480px) {
     .home-section {
         flex-direction: column-reverse;
     }
@@ -300,7 +297,7 @@
     }
 
     #home-section_img {
-        width: 70%;
+        width: 50%;
         margin: 0;
     }
 
@@ -309,6 +306,13 @@
         font-size: 10px;
         padding: 12px 0;
         align-self: center;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .home-section{
+        padding-top: 60px;
     }
 
     .description-section img {
@@ -355,10 +359,11 @@
         height: fit-content;
     }
 
-    .mission-section{
+    .mission-section {
         gap: 20px;
 
     }
+
     .mission-section img {
         width: 45%;
         height: fit-content;
@@ -426,14 +431,14 @@
         font-size: 10px;
     }
 
-    .mission-section{
+    .mission-section {
         gap: 20px;
     }
-    
-    .mission-section_content{
+
+    .mission-section_content {
         width: 60%;
     }
-    
+
     .mission-section_content h1 {
         width: 100%;
         font-size: 16px;
