@@ -1,9 +1,8 @@
 .cases_section {
-    padding-top: 80px;
-    height: 880px;
+    width: 100%;
+    height: fit-content;
     display: flex;
     flex-direction: column;
-    gap: 40px;
     align-items: center;
 }
 
@@ -14,23 +13,25 @@
     font-style: normal;
     font-size: 45px;
     color: #1C6289;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
 }
 
 .cases_section p {
-    width: 50%;
+    width: 60%;
     text-align: center;
     font-family: "Mulish", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
     color: #759fcf;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .cases_section img {
-    width: 880px;
-    height: 469px;
+    width: 70%;
+    height: fit-content;
+    border-radius: 12px;
+    margin-bottom: 30px;
 }
 
 .cases_section .cases_icons {
@@ -45,9 +46,71 @@
     cursor: pointer;
 }
 
+.cases_section .cases_icons button:hover svg path{
+    fill: #083f8b;
+}
+
 .cases_section .cases_icons_balls {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
+}
+
+@media(max-width: 880px) {
+
+    .cases_section h1 {
+        font-size: 36px;
+        margin-bottom: 40px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .cases_section h1 {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    .cases_section img {
+        width: 90%;
+        height: fit-content;
+        margin-bottom: 30px;
+    }
+
+    .cases_section p {
+        width: 80%;
+        font-size: 12px;
+    }
+
+    .cases_section svg {
+        width: 22px;
+    }
+
+    .cases_section .cases_icons {
+        gap: 26px;
+    }
+
+    .cases_section .cases_icons_balls {
+        gap: 20px;
+    }
+
+    .cases_icons_balls svg {
+        width: 8px;
+    }
+}
+
+@media (max-width: 380px) {
+    .cases_section svg {
+        width: 18px;
+    }
+
+    .cases_section .cases_icons {
+        gap: 24px;
+    }
+
+    .cases_icons_balls svg {
+        width: 6px;
+    }
 }

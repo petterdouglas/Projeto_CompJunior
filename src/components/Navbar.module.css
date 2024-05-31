@@ -4,62 +4,10 @@
   display: flex;
   position: fixed;
   background-color: #f2f2f8;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: nowrap;
-}
-
-.navbar .navbar_title {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  padding-right: 200px;
-  gap: 8px;
-}
-
-.navbar .navbar_title h1 {
-  font-family: "Advent Pro", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
-  color: #1C6289;
-}
-
-.navbar .navbar_title h1 span {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-}
-
-.navbar .navbar_links {
-  display: flex;
-  padding-left: 50px;
-  gap: 25px;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  font-family: "Mulish", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.navbar .navbar_links li a {
-  padding: 10px;
-  text-decoration: none;
-  color: #1C6289;
-}
-
-.navbar .navbar_links li a:hover {
-  font-family: "Mulish", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-  color: #1C6289;
-  border-bottom: 1.5px solid;
+  padding: 0 40px;
 }
 
 .navbar_scrolled {
@@ -68,42 +16,40 @@
   display: flex;
   position: fixed;
   background: linear-gradient(181.41deg, #1C6289 -8.57%, #255e9e 82.96%);
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: nowrap;
+  padding: 0 40px;
 }
 
-.navbar_scrolled .navbar_title {
+.navbar_title {
   display: flex;
   align-items: center;
   flex-direction: row;
-  padding-right: 200px;
   gap: 8px;
 }
 
-.navbar_scrolled .navbar_title h1 {
+.navbar_title h1 {
   font-family: "Advent Pro", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
+  color: #1C6289;
 }
 
-.navbar_scrolled .navbar_title h1 span {
+.navbar_title h1 span {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
-  color: #fafafa;
 }
 
-.navbar_scrolled .navbar_links {
+.navbar_links {
   display: flex;
-  padding-left: 50px;
-  gap: 25px;
   flex-wrap: nowrap;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
+  gap: 30px;
   list-style: none;
   font-family: "Mulish", sans-serif;
   font-optical-sizing: auto;
@@ -111,17 +57,119 @@
   font-style: normal;
 }
 
-.navbar_scrolled .navbar_links li a {
+.navbar_links li a {
   padding: 10px;
   text-decoration: none;
-  color: #fafafa;
+  color: #1C6289;
+  border-bottom: 1.5px solid transparent;
+  transition: border-bottom 0.5s ease-in-out;
 }
 
-.navbar_scrolled .navbar_links li a:hover {
+.navbar_links li a:hover {
   font-family: "Mulish", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
+  color: #1C6289;
+  border-bottom: 1.5px solid;
+}
+
+.navbar_scrolled .navbar_title h1 {
+  color: black;
+}
+
+.navbar_scrolled .navbar_title h1 span {
+  color: #fafafa;
+}
+
+.navbar_scrolled .navbar_links li a {
+  color: #fafafa;
+  border-bottom: 1.5px solid transparent;
+  transition: border-bottom 0.5s ease-in-out;
+}
+
+.navbar_scrolled .navbar_links li a:hover {
   color: #fff;
   border-bottom: 1.5px solid;
+}
+
+/* Responsividade para celulares */
+
+@media(max-width: 880px) {
+
+  .navbar,
+  .navbar_scrolled {
+    padding: 0 30px;
+    height: 60px;
+  }
+
+  .navbar_links {
+    gap: 10px;
+  }
+
+  .navbar_links li a {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .navbar_title h1 {
+    font-size: 20px;
+  }
+
+  svg {
+    width: 26px;
+  }
+}
+
+@media(max-width: 623px) {
+
+  .navbar_title h1 {
+    display: none;
+  }
+
+  .navbar,
+  .navbar_scrolled {
+    justify-content: space-around;
+  }
+}
+
+@media(max-width: 570px) {
+
+  .navbar_links {
+    gap: 6px;
+  }
+
+  .navbar_links li a {
+    padding: 8px;
+    margin: 0;
+    font-size: 12px;
+  }
+
+  .navbar,
+  .navbar_scrolled {
+    padding: 0 20px;
+  }
+}
+
+@media(max-width: 430px) {
+
+  .navbar,
+  .navbar_scrolled {
+    height: 40px;
+  }
+  
+  .navbar_links {
+    gap: 10px;
+    padding-left: 20px;
+  }
+
+  .navbar_links li a {
+    padding: 5px;
+    font-size: 10px;
+  }
+
+  svg {
+    width: 18px;
+  }
+
 }

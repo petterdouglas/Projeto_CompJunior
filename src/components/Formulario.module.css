@@ -2,6 +2,7 @@
     padding-top: 120px;
     margin-bottom: 100px;
     display: flex;
+    width: 70%;
     height: fit-content;
     flex-direction: column;
     align-items: center;
@@ -13,7 +14,8 @@
     font-weight: 700;
     font-style: normal;
     color: #1C6289;
-    font-size: 40px;
+    text-align: center;
+    font-size: 32px;
     margin-bottom: 10px;
 }
 
@@ -22,7 +24,8 @@
     font-weight: 400;
     font-style: normal;
     color: #759fcf;
-    font-size: 28px;
+    text-align: center;
+    font-size: 24px;
     margin-bottom: 40px;
 }
 
@@ -30,7 +33,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 100%;
+    width: 90%;
     margin-top: 40px;
     padding: 30px;
     border: 3px solid #1C6289;
@@ -70,7 +73,7 @@
     display: flex;
     align-items: center;
     gap: 18px;
-    border-bottom: 2.2px solid;
+    border-bottom: 2px solid;
     margin-bottom: 25px;
 }
 
@@ -167,4 +170,114 @@
 .request_section fieldset #request_section_btn:hover {
     background: #1C6289;
     color: #ffffff;
+}
+
+.error_message{
+    align-self: flex-start;
+    color: red;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+@media(max-width: 880px) {
+
+    .request_section {
+        width: 80%;
+    }
+
+    .request_section>h1 {
+        width: 85%;
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .request_section>h2 {
+        text-align: center;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .request_section>h1 {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .request_section>h2 {
+        font-size: 18px;
+    }
+
+    .request_section fieldset form h1 {
+        font-size: 24px;
+    }
+
+    .request_section fieldset form h2 {
+        font-size: 12px;
+    }
+
+    .request_section fieldset form div .request_section_form_text::-moz-placeholder {
+        font-size: 12px;
+    }
+
+    .request_section fieldset form div .request_section_form_text::placeholder {
+        font-size: 12px;
+    }
+
+    .request_section fieldset form div img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .request_section fieldset form div {
+        border-bottom: 1.8px solid;
+    }
+
+    .request_section fieldset form .request_section_add p {
+        font-size: 12px;
+    }
+
+    .request_section fieldset #request_section_btn {
+        height: 40px;
+        font-size: 20px;
+    }
+
+}
+
+@media(max-width: 385px) {
+    .request_section>h1 {
+        font-size: 18px;
+    }
+
+    .request_section>h2 {
+        font-size: 14px;
+    }
+
+    .request_section fieldset form h1 {
+        font-size: 20px;
+    }
+
+    .request_section fieldset form h2 {
+        font-size: 12px;
+    }
+
+    .request_section fieldset form div .request_section_form_text::-moz-placeholder {
+        font-size: 10px;
+    }
+
+    .request_section fieldset form div .request_section_form_text::placeholder {
+        font-size: 10px;
+    }
+
+    .request_section fieldset form .request_section_add p {
+        font-size: 10px;
+    }
+    .request_section fieldset form div img {
+        width: 14px;
+        height: 14px;
+    }
+    .request_section fieldset #request_section_btn {
+        height: 36px;
+        font-size: 18px;
+    }
 }

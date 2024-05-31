@@ -15,14 +15,15 @@ const Footer = () => {
           <h1><b>Comp</b>Junior</h1>
         </div>
         <div className={style.footer_info_contact}>
-          <h1>Contato</h1>
-          <div>
-            <p>endereço@email.com</p>
-            <p>(35) 9 3535 - 3535</p>
-          </div>
-          <div>
-            <p>endereço@email.com</p>
-            <p>(35) 9 3535 - 3535</p>
+          <div><h1>Contato</h1>
+            <div>
+              <p>endereço@email.com</p>
+              <p>(35) 9 3535 - 3535</p>
+            </div>
+            <div>
+              <p>endereço@email.com</p>
+              <p>(35) 9 3535 - 3535</p>
+            </div>
           </div>
           <div className={style.footer_info_contact_address}>
             <h2>Endereço</h2>
@@ -33,38 +34,41 @@ const Footer = () => {
             </ol>
           </div>
         </div>
-        <div className={style.footer_info_solutions}>
-          <h1>Soluções</h1>
-          <div>
-            <p>O que faz uma empresa junior</p>
-            <Link to="/about/description/#inicio">Saber mais</Link>
+        <div className={style.footer_info_extra}>
+          <div className={style.footer_info_solutions}>
+            <h1>Soluções</h1>
+            <div>
+              <p>O que faz uma empresa junior</p>
+              <Link to="/about/description/#inicio">Saber mais</Link>
+            </div>
+            <div>
+              <p>Quais são nossas missões?</p>
+              <Link to="/about/missions_and_values/#inicio">Saber mais</Link>
+            </div>
+            <div>
+              <p>Quais são nossos valores?</p>
+              <Link to="/about/missions_and_values/#inicio">Saber mais</Link>
+            </div>
           </div>
-          <div>
-            <p>Quais são nossas missões?</p>
-            <Link to="/about/missions_and_values/#inicio">Saber mais</Link>
-          </div>
-          <div>
-            <p>Quais são nossos valores?</p>
-            <Link to="/about/missions_and_values/#inicio">Saber mais</Link>
-          </div>
-        </div>
-        <div className={style.footer_info_request}>
-          <h1>Orçamento</h1>
-          <div>
-            <p>Nossos serviços</p>
-            <Link to="/about/services/#inicio">Saber mais</Link>
-          </div>
-          <div className={style.footer_info_request_cases}>
-            <h2>Cases de sucesso</h2>
-            <ol>
-              <li>Case 1 (Aplicação Mobile)</li>
-              <li>Case 2 (Aplicação Mobile)</li>
-              <li>Case 3 (Aplicação Mobile)</li>
-              <li>Case 4 (Aplicação Mobile)</li>
-              <li>Case 5 (Aplicação Mobile)</li>
-            </ol>
+          <div className={style.footer_info_request}>
+            <h1>Orçamento</h1>
+            <div>
+              <p>Nossos serviços</p>
+              <Link to="/about/services/#inicio">Saber mais</Link>
+            </div>
           </div>
         </div>
+        <div className={style.footer_info_request_cases}>
+          <h2>Cases de sucesso</h2>
+          <ol>
+            <li>Case 1 (Aplicação Mobile)</li>
+            <li>Case 2 (Aplicação Mobile)</li>
+            <li>Case 3 (Aplicação Mobile)</li>
+            <li>Case 4 (Aplicação Mobile)</li>
+            <li>Case 5 (Aplicação Mobile)</li>
+          </ol>
+        </div>
+
       </section>
     </>
   )

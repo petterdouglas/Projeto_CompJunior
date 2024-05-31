@@ -20,9 +20,9 @@ const LandingPage = () => {
     const location = useLocation()
 
     useEffect(() => {
-        if(!location.hash){
+        if (!location.hash) {
             navigate('/')
-        }else{
+        } else {
             location.hash = null
         }
     }, []);
@@ -39,9 +39,7 @@ const LandingPage = () => {
                         </p>
                         <Link to="/#contacts" className="home-section_btn" >Solicitar orçamento</Link>
                     </div>
-                    <div className="home-section_img-container">
-                        <img id="home-section_img" src={Home} alt="Garota estudante usando um notebook" />
-                    </div>
+                    <img id="home-section_img" src={Home} alt="Garota estudante usando um notebook" />
                 </section>
                 <CardServices />
                 <section className="description-section">
@@ -49,9 +47,7 @@ const LandingPage = () => {
                     <div className="description-section_content">
                         <h1>O que é uma Empresa Junior</h1>
                         <img id="description-h1_line" src={H1Line} alt="" />
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus quos corrupti quo id deleniti
-                            maxime esse cupiditate rerum nemo. Sit culpa nam at quod ipsam voluptates praesentium sunt natus
-                            provident!
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus quos corrupti quo id deleniti maxime esse cupiditate rerum nemo. Sit culpa nam at quod ipsam voluptates praesentium sunt natus provident!
                         </p>
                         <About bannerHash={'description'} />
                     </div>

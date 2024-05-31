@@ -38,8 +38,6 @@ main {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     color: #000000;
-    line-height: 22px;
-    text-align: justify;
     margin-bottom: 10px;
 }
 
@@ -54,6 +52,7 @@ main {
 }
 
 .doubts_container_title {
+    text-align: center;
     font-family: 'Mulish', sans-serif;
     font-weight: 700;
     font-size: 32px;
@@ -62,6 +61,7 @@ main {
 }
 
 .doubts_container_caption {
+    text-align: center;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 20px;
@@ -77,7 +77,6 @@ main {
     text-decoration: none;
     text-align: center;
     padding: 20px;
-
     color: #1C6289;
     width: 200px;
     background-color: #fafaf8;
@@ -89,4 +88,115 @@ main {
 .doubts_container a:hover {
     color: #f2f2f8;
     background-color: #1C6289;
+}
+
+@media(max-width: 880px) {
+
+    .sobre_container {
+        width: 80%;
+    }
+
+    .sobre_container img {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .sobre_container p {
+        font-size: 16px;
+    }
+
+    .sobre_container_title {
+        font-size: 30px;
+    }
+
+    .sobre_container_caption {
+        font-size: 18px;
+    }
+
+    .doubts_container {
+        width: 90%;
+        height: 300px;
+    }
+
+    .doubts_container_title {
+        font-size: 26px;
+    }
+
+    .doubts_container_caption {
+        font-size: 22px;
+    }
+
+    .doubts_container a {
+        font-size: 14px;
+        padding: 14px;
+        width: 160px;
+    }
+}
+
+@media(max-width: 480px) {
+
+    .sobre_container {
+        width: 80%;
+    }
+
+    .sobre_container img {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .sobre_container p {
+        font-size: 12px;
+    }
+
+    .sobre_container_title {
+        font-size: 22px;
+    }
+
+    .sobre_container_caption {
+        margin: 10px 0 20px;
+        font-size: 12px;
+    }
+
+    .doubts_container {
+        width: 90%;
+        height: 300px;
+    }
+
+    .doubts_container_title {
+        font-size: 22px;
+    }
+
+    .doubts_container_caption {
+        font-size: 20px;
+    }
+
+    .doubts_container a {
+        font-size: 12px;
+        padding: 12px;
+        width: 160px;
+    }
+}
+
+@media(max-width: 380px) {
+
+    .sobre_container p {
+        font-size: 12px;
+    }
+
+    .sobre_container_title {
+        font-size: 22px;
+    }
+
+    .doubts_container_title {
+        font-size: 20px;
+    }
+
+    .doubts_container_caption {
+        font-size: 18px;
+    }
+
+    .doubts_container a {
+        padding: 10px;
+    }
+
 }

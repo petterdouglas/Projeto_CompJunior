@@ -3,33 +3,26 @@ import Email from '../assets/icon-email.png'
 import Telefone from '../assets/icon-tel.png'
 import Plus from '../assets/icon-plus.png'
 import { useState } from 'react'
+import { useForm } from "react-hook-form"
+import validator from 'validator'
 
 const Formulario = () => {
 
-    const [email, setEmail] = useState('')
-    const [phone, setPhone] = useState([''])
-    const [description, setDescription] = useState('')
+    const [verdade, setVerdade] = useState(false)
     const [nMax, setNMax] = useState(0)
+    const { register, handleSubmit, watch, formState: { errors }, reset } = useForm()
 
-    const handleSubmit = (e) => {
-        e.preventDefault()
-        console.log(email, phone, description)
-        setEmail('')
-        setPhone([''])
-        setDescription('')
+    const onSubmit = (data) => {
+        console.log(data)
+        reset()
     }
 
     const insertContent = (e) => {
         e.preventDefault()
-        setPhone([...phone, ''])
         setNMax(nMax + 1)
+        setVerdade(true)
     }
-
-    const handlePhoneChange = (index, value) => {
-        const newPhone = [...phone];
-        newPhone[index] = value;
-        setPhone(newPhone);
-    }
+    console.log({ errors })
 
     return (
         <>
@@ -37,7 +30,7 @@ const Formulario = () => {
                 <h1>Precisando de algo em específico?</h1>
                 <h2>Vamos discutir seu próximo projeto</h2>
                 <fieldset>
-                    <form onSubmit={handleSubmit} >
+                    <form onSubmit={handleSubmit(onSubmit)} >
                         <h1>Entrar em Contato</h1>
                         <h2>Vamos discutir seu próximo projeto!</h2>
                         <div className={style.request_section_email}>
@@ -46,24 +39,36 @@ const Formulario = () => {
                                 className={style.request_section_form_text}
                                 type="email"
                                 placeholder="Seu melhor email"
-                                onChange={(e) => setEmail(e.target.value)}
-                                value={email}
-                                required
+                                {...register('Email', { required: true, validate: (value) => validator.isEmail(value)})}
                             />
                         </div>
-                        {phone.map((number, index) => (
-                            <div className={style.request_section_telefone} key={index}>
+                        {errors?.Email?.type === 'required' && <span className={style.error_message}>Este campo é obrigatório!</span>}
+                        {errors?.Email?.type === 'validate' && <span className={style.error_message}>Email inválido!</span>}
+                        <div className={style.request_section_telefone}>
+                            <img src={Telefone} alt="telefone" />
+                            <input
+                                className={style.request_section_form_text}
+                                type="tel"
+                                placeholder="Seu melhor número de telefone"
+                                {...register('Telefone1', { required: true, validate: (value) => validator.isMobilePhone(value, 'pt-BR') })}
+                            />
+                        </div>
+                        {errors?.Telefone1?.type === 'required' && <span className={style.error_message}>Este campo é obrigatório!</span>}
+                        {errors?.Telefone1?.type === 'validate' && <span className={style.error_message}>Telefone inválido</span>}
+                        {verdade &&
+                            <div className={style.request_section_telefone}>
                                 <img src={Telefone} alt="telefone" />
                                 <input
                                     className={style.request_section_form_text}
                                     type="tel"
                                     placeholder="Seu melhor número de telefone"
-                                    onChange={(e) => handlePhoneChange(index, e.target.value)}
-                                    value={number}
-                                    required
+                                    {...register('Telefone2', { required: true, validate: (value) => validator.isMobilePhone(value, 'pt-BR') })}
                                 />
                             </div>
-                        ))}
+                        }
+                        {verdade && errors?.Telefone2?.type === 'required' && <span className={style.error_message}>Este campo é obrigatório!</span>}
+                        {errors?.Telefone2?.type === 'validate' && <span className={style.error_message}>Telefone inválido</span>}
+
                         <div className={style.request_section_add}>
                             <button onClick={nMax < 1 ? insertContent : null}><img src={Plus} alt="plus" /></button>
                             <p>Adicionar outra forma de contato</p>
@@ -73,8 +78,7 @@ const Formulario = () => {
                             <textarea
                                 className={style.request_section_form_text}
                                 placeholder="Nos conte um pouco sobre seu o projeto"
-                                onChange={(e) => setDescription(e.target.value)}
-                                value={description}
+                                {...register('Texto')}
                             />
                         </div>
                         <button id={style.request_section_btn} type="submit">Enviar</button>

@@ -8,10 +8,9 @@ const Navbar = () => {
     const navigate = useNavigate()
     const location = useLocation()
 
+
     useEffect(() => {
-
         window.scrollTo(0, 0)
-
         const handleScroll = () => {
             const scrollTop = window.scrollY
             if (scrollTop) {
@@ -28,6 +27,8 @@ const Navbar = () => {
             window.removeEventListener('scroll', handleScroll)
         }
     }, [])
+
+
 
     useEffect(() => {
         if (location.hash) {
@@ -46,9 +47,8 @@ const Navbar = () => {
     }, [hash])
 
     const handleNavClick = (hash) => {
-        setHash(hash) 
+        setHash(hash)
     }
-
     return (
         <nav className={isScrolled ? style.navbar_scrolled : style.navbar}>
             <div className={style.navbar_title}>
@@ -60,9 +60,8 @@ const Navbar = () => {
                 </svg>
                 <h1><span>Comp</span>Junior</h1>
             </div>
-
             <ul className={style.navbar_links}>
-                <li><NavLink to="/#home" onClick={() => handleNavClick('/#home')}>Home</NavLink></li>
+                <li><NavLink to='/#home' onClick={() => handleNavClick('/#home')}>Home</NavLink></li>
                 <li><NavLink to="/#services" onClick={() => handleNavClick('/#services')}>Serviços</NavLink></li>
                 <li><NavLink to="/#values" onClick={() => handleNavClick('/#values')}>Valores</NavLink></li>
                 <li><NavLink to="/#missions" onClick={() => handleNavClick('/#missions')}>Missão</NavLink></li>

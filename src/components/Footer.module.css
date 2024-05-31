@@ -1,109 +1,223 @@
 footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  padding: 80px 0 40px;
+  background: linear-gradient(183.41deg, #0B3650 -8.57%, #1B5289 82.96%);
+}
+
+footer .footer_info {
+  width: 90%;
+  height: 68%;
+  display: flex;
+  justify-content: space-evenly;
+  color: #FFF;
+}
+
+footer .footer_info div {
+  margin-bottom: 20px;
+}
+
+footer .footer_info ol {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+footer .footer_info ol li {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+}
+
+footer .footer_info h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+  margin-bottom: 18px;
+}
+
+footer .footer_info p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+}
+
+footer .footer_info a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 12px;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+footer .footer_info_comp {
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  align-self: start;
+  align-items: center;
+  gap: 10px;
+}
+
+footer .footer_info_comp #comp_icon {
+  flex-shrink: 0;
+}
+
+footer .footer_info_comp h1 {
+  font-family: "Advent Pro", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 18px;
+}
+
+footer .footer_info_comp h1 b {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+footer .footer_info_contact {
+  width: 18%;
+}
+
+footer .footer_info_contact h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+footer .footer_info_contact div {
+  margin-bottom: 20px;
+}
+
+footer .footer_info_contact_address {
+  margin-top: 60px;
+}
+
+footer .footer_info_contact_address ol {
+  margin-top: 18px;
+  list-style-type: disc;
+}
+
+footer .footer_info_solutions {
+  width: 100%;
+}
+
+footer .footer_info_solutions h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+footer .footer_info_request h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 800px) {
+
+  footer .footer_info {
+    width: 100%;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  footer .footer_info_extra {
+    width: 30%;
+  }
+
+  footer .footer_info_comp {
+    width: 80px;
+  }
+
+  footer .footer_info p {
+    font-size: 10px;
+  }
+
+  footer .footer_info a {
+    font-size: 10px;
+  }
+
+  footer .footer_info_contact_address ol li {
+    font-size: 8px;
+  }
+
+  footer .footer_info h1 {
+    font-size: 18px;
+  }
+
+  footer .footer_info_comp h1 {
+    font-size: 14px;
+  }
+
+  footer .footer_info_request_cases ol li {
+    font-size: 12px;
+  }
+
+  footer .footer_info h2 {
+    font-size: 18px;
+  }
+
+  footer .footer_info_contact{
+    width: 30%;
+  }
+}
+
+@media (max-width: 480px) {
+  footer .footer_info_comp {
+    width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 510px;
-    background: linear-gradient(183.41deg, #0B3650 -8.57%, #1B5289 82.96%);
+    padding-bottom: 30px;
   }
+
   footer .footer_info {
-    width: 90%;
-    height: 68%;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .footer_info_contact {
+    width: 80%;
     display: flex;
     justify-content: space-evenly;
-    color: #FFF;
+    gap: 30px;
   }
-  footer .footer_info div {
-    margin-bottom: 20px;
-  }
-  footer .footer_info ol {
-    padding-left: 20px;
-    list-style-type: disc;
-  }
-  footer .footer_info ol li {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 14px;
-  }
-  footer .footer_info h2 {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 20px;
-    margin-bottom: 18px;
-  }
-  footer .footer_info p {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 14px;
-  }
-  footer .footer_info a {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-style: italic;
-    font-size: 12px;
-    text-decoration: none;
-    color: #FFFFFF;
-  }
-  footer .footer_info_comp {
-    width: 18%;
-    display: flex;
-    align-self: start;
-    align-items: center;
-    gap: 8px;
-  }
-  footer .footer_info_comp #comp_icon {
-    flex-shrink: 0;
-  }
-  footer .footer_info_comp h1 {
-    font-family: "Advent Pro", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 30px;
-  }
-  footer .footer_info_comp h1 b {
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-  }
-  footer .footer_info_contact {
-    width: 18%;
-  }
-  footer .footer_info_contact h1 {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 26px;
-    margin-bottom: 20px;
-  }
+
   footer .footer_info_contact div {
-    margin-bottom: 20px;
+    width: 45%;
   }
+
+
+
   footer .footer_info_contact_address {
-    margin-top: 60px;
+    margin-top: 0;
   }
-  footer .footer_info_contact_address ol {
-    margin-top: 18px;
-    list-style-type: disc;
+
+  footer .footer_info_extra {
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
   }
+
   footer .footer_info_solutions {
-    width: 18%;
+    width: 50%;
   }
-  footer .footer_info_solutions h1 {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 26px;
-    margin-bottom: 20px;
-  }
-  footer .footer_info_request h1 {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 26px;
-    margin-bottom: 20px;
-  }  
+
+}

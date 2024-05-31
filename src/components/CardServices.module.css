@@ -1,10 +1,11 @@
 .services_section {
     background-image: url("../assets/services-bg_img.png");
     background-repeat: no-repeat;
-    background-position: 0 180px;
-    background-size: 990px;
+    background-position: 0 bottom;
+    background-size: 900px;
     width: 100%;
-    height: 1200px;
+    height: fit-content;
+    margin-bottom: 60px;
     display: flex;
     padding-top: 4rem;
     flex-direction: column;
@@ -28,51 +29,144 @@
 }
 
 .services_section p {
-    width: 50%;
+    width: 100%;
+    height: fit-content;
     color: #6C79AF;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-style: normal;
-    margin-bottom: 60px;
     font-size: 14px;
     text-align: center;
 }
 
-.services_section .services_section_types {
+.services_section_types {
     align-self: center;
     width: 80%;
-    height: 700px;
+    height: fit-content;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    justify-content: space-evenly;
+    gap: 40px;
+    padding-top: 60px;
     margin-bottom: 40px;
 }
 
-.services_section .services_section_types div {
+.services_section_types div {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     box-shadow: 8px 8px 25px rgba(69, 143, 246, 0.3490196078);
     gap: 18px;
-    width: 28%;
-    height: 300px;
+    width: 300px;
+    height: 380px;
     background-color: #fff;
     padding: 30px;
     border-radius: 10px;
 }
 
-.services_section .services_section_types div h2 {
+.services_section_types div h2 {
     font-family: "Mulish", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
+    text-align: center;
 }
 
-.services_section .services_section_types div p {
+.services_section_types div p {
     width: 100%;
+    height: 100%;
     margin: 0;
     text-align: left;
+}
+
+.services_section_types div img {
+    margin-top: 20px;
+    width: 60px;
+    height: fit-content;
+}
+
+@media(max-width: 880px) {
+    
+    .services_section {
+        background-position: 0 center;
+        background-size: 860px;
+    }
+
+    .services_section_types {
+        gap: 20px;
+    }
+
+    .services_section p {
+        width: 90%;
+    }
+
+    .services_section_types div h2 {
+        width: 180px;
+        font-size: 18px;
+    }
+
+    .services_section_types div {
+        gap: 18px;
+        width: 280px;
+        height: 360px;
+    }
+}
+
+@media(max-width: 480px) {
+    .services_section {
+        background-position: 0 center;
+        background-size: 350%;
+    }
+
+    .services_section h1 {
+        font-size: 24px;
+    }
+
+    .services_section p {
+        font-size: 12px;
+        padding-bottom: 0;
+    }
+
+    .services_section_types {
+        width: 90%;
+    }
+
+    .services_section_types div {
+        gap: 18px;
+        width: 200px;
+        height: fit-content;
+    }
+
+    .services_section_types div h2 {
+        width: 160px;
+        font-size: 16px;
+    }
+
+    .services_section_types div p {
+        font-size: 14px;
+    }
+
+    .services_section_types div img {
+        width: 30px;
+        height: fit-content;
+    }
+}
+
+@media(max-width: 380px) {
+
+    .services_section_types div {
+        width: 70%;
+        gap: 20px;
+    }
+
+    .services_section_types div h2 {
+        text-align: center;
+        width: 80%;
+    }
+    .services_section_types div p{
+        font-size: 10px;
+    }
+    .services_section_types div img{
+        margin-top: 0;
+    }
 }

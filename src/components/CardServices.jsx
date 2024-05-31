@@ -21,32 +21,33 @@ const CardServices = () => {
                     eaque minus, labore voluptas!</p>
                 <div className={style.services_section_types}>
                     <div>
-                        <img width="91.98px" height="90px" src={Lupa} alt="lupa" />
-                        <h2>Web estático</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa atque, provident ipsum sunt quia doloremque?</p>
+                        <img src={Lupa} alt="lupa" />
+                        <h2>Web site</h2>
+                        <p>Desenvolvimento de páginas web estáticas ou dinâmicas, com layout que responde a diferentes tamanhos de telas. Pensamos em cada etapa de forma a criar a melhor solução para a sua ideia.</p>
                     </div>
                     <div>
-                        <img width="67.08px" height="95px" src={Tablet} alt="document" />
-                        <h2>Web dinâmico</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa atque, provident ipsum sunt quia doloremque?</p>
+                        <img src={Tablet} alt="document" />
+                        <h2>Sistema dinâmico</h2>
+                        <p>Os sistemas web com foco em gerenciamento, lógica de negócio e desenvolvimento aprimorado são pensados para que os resultados de sua implementação sejam efetivos e cumpram todas as demandas do seu negócio.</p>
                     </div>
                     <div>
-                        <img width="67.08px" height="95px" src={Tablet} alt="tablet" />
+                        <img src={Tablet} alt="tablet" />
                         <h2>Mobile</h2>
+                        <p>Desenvolvimento de aplicações mobiles, muito utilizadas nos dias de hoje. Oferecemos cuidados técnicos que possibilitam uma experiência agradável durante a navegação ao usuário, tudo isso é feito com base em um estudo com foco nas necessidades do seu cliente e negócio.
+                        </p>
+                    </div>
+                    <div>
+                        <img src={Tablet2} alt="tablet2" />
+                        <h2>Análise de dados</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa atque, provident ipsum sunt quia doloremque?</p>
                     </div>
                     <div>
-                        <img width="67.08px" height="95px" src={Tablet2} alt="tablet2" />
-                        <h2>Softwares</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa atque, provident ipsum sunt quia doloremque?</p>
-                    </div>
-                    <div>
-                        <img width="67.08px" height="95px" src={Tablet} alt="tablet" />
+                        <img src={Tablet} alt="tablet" />
                         <h2>Data science</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa atque, provident ipsum sunt quia doloremque?</p>
                     </div>
                     <div>
-                        <img width="67.08px" height="95px" src={Tablet2} alt="tablet2" />
+                        <img src={Tablet2} alt="tablet2" />
                         <h2>Marketing</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa atque, provident ipsum sunt quia doloremque?</p>
                     </div>
