@@ -2,7 +2,6 @@
 import { useState } from 'react'
 import { useForm } from "react-hook-form"
 import validator from 'validator'
-import { initializeApp } from "firebase/app"
 //estilos
 import style from './Formulario.module.css'
 // imagens
