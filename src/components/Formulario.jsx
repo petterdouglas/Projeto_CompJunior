@@ -1,29 +1,53 @@
+//hooks
+import { useState, useEffect } from 'react'
+import { useForm } from "react-hook-form"
+import validator from 'validator'
 import { initializeApp } from "firebase/app"
+import { getFirestore, getDocs, collection, addDoc } from "firebase/firestore"
+//estilos
 import style from './Formulario.module.css'
+// imagens
 import Email from '../assets/icon-email.png'
 import Telefone from '../assets/icon-tel.png'
 import Plus from '../assets/icon-plus.png'
-import { useState } from 'react'
-import { useForm } from "react-hook-form"
-import validator from 'validator'
 
-const firebaseConfig = {
+const firebaseForm = initializeApp({
     apiKey: "AIzaSyBj0yrpbfXPCXtNVyhXTekHerpwLmLS8w4",
     authDomain: "compjunior-b5e06.firebaseapp.com",
     projectId: "compjunior-b5e06",
     storageBucket: "compjunior-b5e06.appspot.com",
     messagingSenderId: "918246898122",
     appId: "1:918246898122:web:64c7481c0ce7cee9feb733"
-}
+})
 
 const Formulario = () => {
 
     const [verdade, setVerdade] = useState(false)
     const [nMax, setNMax] = useState(0)
-    const { register, handleSubmit, watch, formState: { errors }, reset } = useForm()
+    const { register, handleSubmit, formState: { errors }, reset } = useForm()
+    const [contacts, setContacts] = useState([]) // armazém dos dados dos clientes
 
-    const onSubmit = (data) => {
-        console.log(data)
+    const db = getFirestore(firebaseForm)
+    const contactCollectionRef = collection(db, 'dataBase')
+
+    useEffect(() => {
+        const getClients = async () => {
+            const data = await getDocs(contactCollectionRef)
+            setContacts(...data.docs.map((doc) => ({ ...doc.data(), id: doc.id })))
+        }
+        getClients()
+    }, []);
+
+
+    const onSubmit = async (data) => {
+        const email = data.Email
+        const phone1 = data.Telefone1
+        const phone2 = (data.Telefone2 ? data.Telefone2 : '')
+        const text = data.Texto
+        console.log({email, phone1, phone2, text})
+        await addDoc(contactCollectionRef,{
+            email, phone1, phone2, text,
+        })
         reset()
     }
 
@@ -49,7 +73,7 @@ const Formulario = () => {
                                 className={style.request_section_form_text}
                                 type="email"
                                 placeholder="Seu melhor email"
-                                {...register('Email', { required: true, validate: (value) => validator.isEmail(value)})}
+                                {...register('Email', { required: true, validate: (value) => validator.isEmail(value) })}
                             />
                         </div>
                         {errors?.Email?.type === 'required' && <span className={style.error_message}>Este campo é obrigatório!</span>}
