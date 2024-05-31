@@ -3,8 +3,8 @@ import style from './CasesSucesso.module.css'
 
 import Case1 from '../assets/case1_img.png'
 import Case2 from '../assets/case2_img.png'
-import Case3 from '../assets/case1_img.png'
-import Case4 from '../assets/case1_img.png'
+import Case3 from '../assets/case3_img.png'
+import Case4 from '../assets/case4_img.png'
 
 const CasesSucesso = () => {
 
