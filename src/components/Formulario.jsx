@@ -1,3 +1,4 @@
+import { initializeApp } from "firebase/app"
 import style from './Formulario.module.css'
 import Email from '../assets/icon-email.png'
 import Telefone from '../assets/icon-tel.png'
@@ -5,6 +6,15 @@ import Plus from '../assets/icon-plus.png'
 import { useState } from 'react'
 import { useForm } from "react-hook-form"
 import validator from 'validator'
+
+const firebaseConfig = {
+    apiKey: "AIzaSyBj0yrpbfXPCXtNVyhXTekHerpwLmLS8w4",
+    authDomain: "compjunior-b5e06.firebaseapp.com",
+    projectId: "compjunior-b5e06",
+    storageBucket: "compjunior-b5e06.appspot.com",
+    messagingSenderId: "918246898122",
+    appId: "1:918246898122:web:64c7481c0ce7cee9feb733"
+}
 
 const Formulario = () => {
 
@@ -22,7 +32,7 @@ const Formulario = () => {
         setNMax(nMax + 1)
         setVerdade(true)
     }
-    console.log({ errors })
+
 
     return (
         <>
