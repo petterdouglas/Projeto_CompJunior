@@ -20,9 +20,9 @@ function App() {
         </header>
         <Routes>
           <Route path='/Projeto_CompJunior/' element={<LandingPage />} />
-          <Route path={`/Projeto_CompJunior/about/missions_and_values`} element={<Sobre missionsValues={'missions_and_values'} />} />
-          <Route path={`/Projeto_CompJunior/about/description`} element={<Sobre description={'description'} />} />
-          <Route path={`/Projeto_CompJunior/about/services`} element={<Sobre services={'services'} />} />
+          <Route path={`/Projeto_CompJunior/about/missions_and_values/`} element={<Sobre missionsValues={'missions_and_values'} />} />
+          <Route path={`/Projeto_CompJunior/about/description/`} element={<Sobre description={'description'} />} />
+          <Route path={`/Projeto_CompJunior/about/services/`} element={<Sobre services={'services'} />} />
         </Routes>
         <footer>
           <Footer />
