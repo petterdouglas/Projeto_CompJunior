@@ -34,7 +34,6 @@ const Formulario = () => {
         const getClients = async () => {
             const data = await getDocs(contactCollectionRef)
             setContacts(...data.docs.map((doc) => ({ ...doc.data(), id: doc.id })))
-            console.log(contacts)
         }
         getClients()
     }, []);
@@ -45,8 +44,7 @@ const Formulario = () => {
         const phone1 = data.Telefone1
         const phone2 = (data.Telefone2 ? data.Telefone2 : '')
         const text = data.Texto
-        console.log({email, phone1, phone2, text})
-        await addDoc(contactCollectionRef,{
+        await addDoc(contactCollectionRef, {
             email, phone1, phone2, text,
         })
         window.alert('Formulário enviado com successo!')

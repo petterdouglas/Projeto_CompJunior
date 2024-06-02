@@ -1,5 +1,5 @@
 
-import { useState, useEffect } from 'react'
+
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 //components
@@ -14,15 +14,15 @@ function App() {
 
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename='/Projeto_CompJunior/'>
         <header>
           <Navbar />
         </header>
         <Routes>
-          <Route path='/Projeto_CompJunior/' element={<LandingPage />} />
-          <Route path={`/Projeto_CompJunior/about/missions_and_values`} element={<Sobre missionsValues={'missions_and_values'} />} />
-          <Route path={`/Projeto_CompJunior/about/description`} element={<Sobre description={'description'} />} />
-          <Route path={`/Projeto_CompJunior/about/services`} element={<Sobre services={'services'} />} />
+          <Route path='/' element={<LandingPage />} />
+          <Route path={`/about/missions_and_values`} element={<Sobre missionsValues={'missions_and_values'} />} />
+          <Route path={`/about/description`} element={<Sobre description={'description'} />} />
+          <Route path={`/about/services`} element={<Sobre services={'services'} />} />
         </Routes>
         <footer>
           <Footer />

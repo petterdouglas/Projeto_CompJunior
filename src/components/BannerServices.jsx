@@ -5,24 +5,6 @@ import { useState, useEffect } from 'react'
 import Imagem from '../assets/services_about_img.png'
 
 const BannerServices = () => {
-    useEffect(() => {
-        window.scrollTo(0, 0)
-        const handleScroll = () => {
-            const scrollTop = window.scrollY
-            if (scrollTop) {
-                setIsScrolled(true)
-            } else {
-                setIsScrolled(false)
-            }
-        };
-
-        window.addEventListener('scroll', handleScroll)
-
-        // Limpar o event listener quando o componente for desmontado
-        return () => {
-            window.removeEventListener('scroll', handleScroll)
-        }
-    }, [])
 
 
 

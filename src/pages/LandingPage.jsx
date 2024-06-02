@@ -24,7 +24,7 @@ const LandingPage = () => {
                         <h1>Criatividade jovem, compromisso profissional</h1>
                         <p>Na Comp Junior, estamos comprometidos com a execelência e alta performance. Aqui oferecemos uma ampla gama de serviços personalizados, desde a criação de sites estáticos e dinâmicos até a análise de dados e desenvolvimento de aplicativos móveis. Caso interessado(a), em contato conosco!
                         </p>
-                        <Link to="/Projeto_CompJunior/#contacts" className="home-section_btn" >Solicitar orçamento</Link>
+                        <Link to="/#contacts" className="home-section_btn" >Solicitar orçamento</Link>
                     </div>
                     <img id="home-section_img" src={Home} alt="Garota estudante usando um notebook" />
                 </section>

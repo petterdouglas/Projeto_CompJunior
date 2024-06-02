@@ -5,35 +5,6 @@ import { useState, useEffect } from 'react'
 import Imagem from '../assets/missionandvalues_about_img.jpg'
 
 const BannerMissionsValues = () => {
-    useEffect(() => {
-        window.scrollTo(0, 0)
-        const handleScroll = () => {
-            const scrollTop = window.scrollY
-            if (scrollTop) {
-                setIsScrolled(true)
-            } else {
-                setIsScrolled(false)
-            }
-        };
-
-        window.addEventListener('scroll', handleScroll)
-
-        // Limpar o event listener quando o componente for desmontado
-        return () => {
-            window.removeEventListener('scroll', handleScroll)
-        }
-    }, [])
-
-
-
-    useEffect(() => {
-        if (location.hash) {
-            const element = document.querySelector(location.hash)
-            if (element) {
-                element.scrollIntoView()
-            }
-        }
-    }, [location])
 
     return (
         <main id='inicio'>
@@ -73,7 +44,7 @@ const BannerMissionsValues = () => {
             <section className='doubts_container'>
                 <h1 className='doubts_container_title'>Ficou em dúvida sobre algo?</h1>
                 <h2 className='doubts_container_caption'>Vamos conversar sobre!</h2>
-                <Link to='/#contacts' onClick={() => handleNavClick('/#contacts')}>Entrar em contato</Link>
+                <Link to='/#contacts' >Entrar em contato</Link>
             </section>
         </main>
     )
